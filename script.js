@@ -22,10 +22,6 @@ console.log(shoppingList);
 let i = 0;
 
 
-// creo la lista li
-const liListEl = document.createElement('ul');
-liListEl.classList.add('li')
-ulListEl.append(liListEl);
 
 
 // creo funzione button
@@ -34,14 +30,24 @@ listButtonEL.addEventListener('click', function () {
 
     console.log(ulListEl);
     
-    liListEl.textContent = shoppingList;
     
 
 // creo ciclo while
     while (i < shoppingList[i]) {
-        liListEl = shoppingList[i];
-        console.log(liListEl);
+
+        const liEl = document.createElement('li');
+        
+        const ulLiEl = shoppingList[i];
+
+        liEl.innerText(ulLiEl);
+
+        ulListEl.append(liEl);
+
+
+        console.log(liEl);
         i++;
+
+
     };
 
     
