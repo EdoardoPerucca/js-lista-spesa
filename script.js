@@ -8,14 +8,13 @@
 
 
 // creo variabili che richiamano l'html
-const ListContainerEl = document.getElementById("list-container");
+
 const ulListEl = document.getElementById('ul-list');
 const listButtonEL = document.getElementById('list-button');
 
 
 // creo la lista della spesa in array
 const shoppingList = ['latte', 'uova', 'caffè', 'biscotti', 'yogurt', 'pasta', 'shampoo'];
-console.log(shoppingList);
 
 
 //creo una variabile contatore
@@ -33,18 +32,18 @@ listButtonEL.addEventListener('click', function () {
     
 
 // creo ciclo while
-    while (i < shoppingList[i]) {
+    while (i < shoppingList.length) {
 
         const liEl = document.createElement('li');
         
         const ulLiEl = shoppingList[i];
 
-        liEl.innerText(ulLiEl);
+        liEl.innerText= shoppingList[i];
 
         ulListEl.append(liEl);
 
 
-        console.log(liEl);
+        console.log = liEl;
         i++;
 
 
